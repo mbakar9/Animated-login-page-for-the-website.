@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="choise-button" id="choise-button">
+        <img src="assets/img/user-default.svg"></img>
+        <p class="info">Press enter to login.</p>
+    </div>
+    <div id="container">
+        <div class="login-img"></div>
+        <p class="login-username">Jake Smith</p>
+        <form class="form-control">
+            <span class="close-btn"><i class="fa fa-close"></i></span>
+            <input class="username" type="text" name="username" placeholder="Username">
+            <input class="password" type="password" name="password" placeholder="Password">
+            <span class="continue"><i class="fa fa-arrow-right"></i></span>
+            <span class="check"><i class="fa fa-check"></i></span>
+        </form>
+    </div>
+
+    <div class="model">
+        <span class="close-model">
+            <i class="fa fa-close"></i>
+        </span>
+        <div class="icon">
+            <i class="fa fa-info-circle"></i>
+        </div>
+        <div class="message">
+            <p>Bir hata oluştu! Lütfen tekrar deneyiniz.</p>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+* {
+    transition: .50s all !important;
+}
+
+html {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden !important;
+}
+
+html::before {
+    background: url("../img/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    content: "";
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .50s all;
+    transform: scale(1.2);
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* Choise Button */
+.choise-button {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    margin: auto;
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0.7;
+}
+
+.choise-button img {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+}
+
+.info {
+    width: 200px;
+    position: relative;
+    opacity: .7;
+    color: #ddd;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Container */
+#container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    margin: auto;
+    width: 260px;
+    min-height: 200px;
+    max-height: 300px;
+    height: auto;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Container Image and Username */
+.login-img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: 120px;
+    display: block;
+    background-image: url("../img/user-default.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.login-username {
+    display: none;
+    height: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Inputs */
+.form-control {
+    display: flex;
+}
+
+input {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    position: relative;
+    width: 60%;
+    height: 20px;
+    display: block;
+    margin: 30px auto;
+    font-size: 17px;
+    color: #fff;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    opacity: 0.7;
+    background: #413F3F;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+}
+
+.form-control span {
+    margin: 34px 10px;
+    background: #413F3F;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0;
+    border: 0;
+    border-radius: 50%;
+}
+
+.form-control span i {
+    margin-top: 7px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+
+}
+
+/* Buttons */
+.password {
+    display: none;
+}
+
+.check {
+    display: none;
+}
+
+/* Placeholders */
+::-webkit-input-placeholder {
+    color: #ddd;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #ddd;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #ddd;
+}
+
+:-ms-input-placeholder {
+    color: #ddd;
+}
+
+.model {
+    display: flex;
+    visibility: hidden;
+    position: absolute;
+    width: 500px;
+    max-width: 90%;
+    height: 100px;
+    background-color: #413F3F;
+    border-radius: 10px;
+    top: 50%;
+    left: -100%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    transition: .50s all;
+}
+
+.model .icon {
+    height: 100px;
+    width: 100px;
+    display: flex;
+}
+
+.model .icon i {
+    font-size: 60px;
+    color: #ddd;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.model .message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+}
+
+.model .close-model {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.model .close-model i {
+    color: #ddd;
+    font-size: 17.5px;
+}

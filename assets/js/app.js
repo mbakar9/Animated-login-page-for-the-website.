@@ -22,7 +22,7 @@ function close() {
     $('.continue').css('display', 'block');
     $('.password').css('display', 'none');
     $('.username').css('display', 'block');
-    $('.login-img').css('background-image', 'url("http://127.0.0.1:5500/assets/img/user-default.svg")');
+    $('.login-img').css('background-image', 'url("assets/img/user-default.svg")');
     $('.login-username').css('display', 'none');
 }
 
@@ -54,7 +54,7 @@ $('.continue').click(function () {
     $('.continue').css('display', 'none');
     $('.password').css('display', 'block');
     $('.username').css('display', 'none');
-    $('.login-img').css('background-image', 'url("http://127.0.0.1:5500/assets/img/user-img.jpg")');
+    $('.login-img').css('background-image', 'url("assets/img/user-img.jpg")');
     $('.login-username').css('display', 'block');
 });
 
